@@ -26,7 +26,7 @@ yarn start
 
 ```
 
-## 增加测试工具jest
+## 增加测试工具jest 注意:只能在*.test.ts 或 *.spec.ts中写测试方法
 ```
 // 1.安装 Jest
 npm install --save-dev jest @types/jest ts-jest
