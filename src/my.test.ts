@@ -1,3 +1,5 @@
+import base58 from "bs58";
+
 //npx jest --testNamePattern="test1"
 test('test1', () => {
     // 您的测试逻辑
@@ -10,7 +12,7 @@ test('test1', () => {
   //npx jest --testNamePattern="test2"
   test('test2', () => {
     // 您的测试逻辑
-    console.log(999);
+    console.log(base58);
     
     // expect(something).toBe(somethingElse);
   });
