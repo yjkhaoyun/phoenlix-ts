@@ -24,5 +24,29 @@ yarn add ts-node @types/node --dev
 //运行
 yarn start
 
+```
+
+## 增加测试工具jest
+```
+// 1.安装 Jest
+npm install --save-dev jest @types/jest ts-jest
+# 或者
+yarn add --dev jest @types/jest ts-jest
+
+// 2.配置 Jest,根目录新建 jest.config.js 
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+};
+
+// 3.编写测试文件 test.ts 用npx命令执行
+# npx jest --testNamePattern="test1"
+test('test1', () => {
+    // 您的测试逻辑
+    console.log(888);
+    
+    // expect().toBe();//断言 两个值是否相等
+});
+
 
 ```
