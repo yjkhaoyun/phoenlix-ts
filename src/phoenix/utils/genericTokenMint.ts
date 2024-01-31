@@ -2,7 +2,8 @@ import * as splToken from "@solana/spl-token";
 import * as beet from "@metaplex-foundation/beet";
 import * as web3 from "@solana/web3.js";
 import { BN } from "bn.js";
-import { Client, MarketData } from "../../src";
+import {Client} from "../client";
+import {MarketData} from "../market";
 
 // Helper types and functions for interacting with the generic token faucet; only used for devnet testing.
 export const airdropSplInstructionDiscriminator = Buffer.from(
